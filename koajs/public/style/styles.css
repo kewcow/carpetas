@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Body */
+body {
+	background-color: teal;
+}
+
+h1 {
+	color: yellow;
+	font-size: 3em;
+}
+
+label[for="name"] {
+	font-size: 1.4em;
+	color: #fff;
+}
+
+input[id="name"] {
+	display: block;
+	background-color: darkorange;
+	font-size: 1.3em;
+	margin: auto;
+	outline: none;
+	border: 0.1em solid #000;
+	border-radius: 0.2em;
+}
+
+label[for="day"] {
+	color: #fff;
+	font-size: 1.2em;
+}
+label[for="night"] {
+	color: #fff;
+	font-size: 1.2em;
+}
+
+
+#press {
+	display: block;
+	font-size: 1.5em;
+	margin: auto;
+	border-radius: 0.15em;
+	border: 0.1em solid yellow;
+	background-color: darkred;
+	color: #fff;
+}
