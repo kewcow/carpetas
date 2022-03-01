@@ -34,5 +34,4 @@ function people(name) {
 };
 
 const person = new people('kevin');
-
-const tool = new Notification('Hello Kevin');
+const animal = new people('lucy');
