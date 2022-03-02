@@ -28,10 +28,12 @@ for (let img of images) {
 	});
 }
 
-function people(name) {
-	this.name = name;
-	this.day = function() { console.log(`mi nombre es: ${this.name}`) };
+const cat = {
+  name: "lucy",
+  color: "white",
+  raze: "felino",
+  hello() {
+    console.log(`hello ${this.name} nice color ${this.color}`);
+  }
 };
 
-const person = new people('kevin');
-const animal = new people('lucy');
