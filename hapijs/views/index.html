@@ -3,8 +3,11 @@ html(lang="es" dir="ltr")
   head
     include partials/meta.pug
     link(rel="stylesheet" href="style/tool.css")
-    script(src="script/tool.js" defer)
-    title Gallery
+    script(src="script/async.js" defer)
+    title Async
   body
-    h1 Balls random
-    canvas
+    h1 Async code
+    p(id="reloj") 00:00:00
+    button(id="start") Start
+    button(id="stop") Stop
+    button(id="restart")  Restart
