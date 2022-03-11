@@ -7,13 +7,13 @@ const width: number = canvas.width = window.innerWidth;
 const height: number = canvas.height = window.innerHeight;
 
 // Random number
-const random = (min: number, max: number) => {
+const random = (min: number, max: number): number => {
   const num: number = Math.floor(Math.random() * (max - min + 1)) + min;
   return num;
 }
 
 // Color random
-const randomRGB = () => {
+const randomRGB = (): string => {
   const rgb: string = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`;
   return rgb;
 }
@@ -72,7 +72,7 @@ class ball extends shape{
     this.x += this.velX;
     this.y += this.velY;
   }
-  collisionDetect() {
+  collisionDetect(): void {
     for (const boll of balls) {
       if (!(this == boll) && boll.exists) {
         const dx = this.x - boll.x;
