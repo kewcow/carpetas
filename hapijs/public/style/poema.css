@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Body */
+body {
+  background-color: Darkblue;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: lightblue;
+  text-align: center;
+}
+
+label[for="box-poema"] {
+  color: lightblue;
+  font-size: 1.3rem;
+}
+
+label[for="box-image"] {
+  color: lightblue;
+  font-size: 1.3rem;
+}
+
+select {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: 0.1em solid lightblue;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  font-family: 'sans-serif';
+  text-align: center;
+  width: 60%;
+}
+
+q {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'sans-serif';
+}
+
+section {
+  margin-top: 1em;
+}
+
+section img {
+  width: 90%;
+  height: 50%;
+  margin-left: 1.2em;
+  border: 0.2em solid #fff;
+  border-radius: 0.3em;
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* body */
+body {
+  background-color: #000;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'sans-serif';
+}
+
+p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+button {
+  width: 5rem;
+  height: 3rem;
+  background-color: orange;
+  border: 0.15em solid #fff;
+  border-radius: 0.2em;
+  margin: 0 0.6em;
+  font-family: 'sans-serif';
+  font-size: 1rem;
+}

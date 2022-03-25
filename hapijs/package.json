@@ -2,9 +2,9 @@
   "name": "hapijs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,7 @@
     "@hapi/hoek": "^9.2.1",
     "@hapi/inert": "^6.0.5",
     "@hapi/vision": "^6.1.0",
-    "pug": "^3.0.2"
+    "ejs": "^3.1.6"
   },
   "devDependencies": {
     "@types/node": "^17.0.21"

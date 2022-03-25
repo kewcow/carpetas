@@ -1,0 +1,29 @@
+<!Doctype html>
+<html lang="es" dir="ltr">
+  <head>
+    <%- include ('partials/meta.ejs') %>
+    <link rel="stylesheet" href="style/poema.css"/>
+    <script src="script/poema.js" defer></script>
+    <title>Poemas Request</title>
+  </head>
+  <body>
+    <h1>Poemas of Epopeya</h1>
+    <label for="box-poema">Poemas: </label>
+    <select id="box-poema">
+      <option>Julio Cortazar</option>
+      <option>Carl Jung</option>
+      <option>Platon</option>
+      <option>Anonimo</option>
+    </select>
+    <label for="box-image">Images: </label>
+    <select id="box-image">
+      <option>Negro</option>
+      <option>Estrella</option>
+      <option>Images</option>
+      <option>Planeta</option>
+      <option>Galaxia</option>
+    </select>
+    <section id="box-content">
+    </section>
+  </body>
+</html>

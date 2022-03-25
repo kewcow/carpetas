@@ -1,21 +1,24 @@
 'use strict';
-
-const koa = require('koa');
+const Koa = require('koa');
 const koaRouter = require('@koa/router');
 const views = require('koa-views');
-const stac = require('koa-static');
+const staticFile = require('koa-static');
 const path = require('path');
-
-const app = new koa();
-const router = new koaRouter();
+const router = require('./router.js');
 
 const render = views(__dirname + '/views', { extension: 'ejs' });
 
-app.use(render);
-router.get('/', async ctx => ctx.render('index'));
+const routes = new koaRouter();
+routes
+  .get('/', router.home)
+  .get('/worker', router.worker)
+  .get('/list', router.list)
+  .get('/poema', router.poema);
 
-app.use(stac(path.join(__dirname, 'public')));
-app.use(router.routes());
-app.use(router.allowedMethods());
-
-app.listen({port: 3000});
+const app = new Koa();
+app
+  .use(staticFile(path.join(__dirname, 'public')))
+  .use(render)
+  .use(routes.routes())
+  .use(routes.allowedMethods())
+  .listen({ port: process.env.PORT || 3000 });

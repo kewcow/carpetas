@@ -1,0 +1,22 @@
+<!Doctype html>
+<html lang="es" dir="ltr">
+	<head>
+    <%- include ('partials/meta.ejs') %>
+		<link rel="stylesheet" href="style/history.css"/>
+		<script src="script/history.js" defer></script>
+		<title>Generate</title>
+	</head>
+	<body>
+		<h1> Generate History </h1>
+		<div>
+			<label for="name">Name:</label>
+			<input id="name" type="text" placeholder="insert name....">
+			<label for="day">Day</label>
+			<input id="day" type="radio" name="wekend" value="day" checked>
+			<label for="night">Night</label>
+			<input id="night" type="radio" name="wekend" value="night">
+			<button id="press">Random</button>
+			<p id="story"></p>
+		</div>
+	</body>
+</html>

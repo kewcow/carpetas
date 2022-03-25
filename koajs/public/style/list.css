@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Body */
+body {
+  background-color: darkred;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+label[for="names"] {
+  font-size: 1.9rem;
+  font-family: 'sans-serif';
+  color: #fff;
+}
+
+input[id="names"] {
+  font-size: 1rem;
+  border: 0.15em solid gold;
+  border-radius: 0.4em;
+  outline: none;
+  margin-left: 1em;
+  background-color: darkorange;
+}
+
+#enter {
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  border: 0.15em solid #000;
+  border-radius: 0.3em;
+}
+
+div {
+  margin-top: 1em;
+}
+
+div span {
+  font-size: 1.2rem;
+  font-family: 'sans-serif';
+  color: #fff;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+div button {
+  font-size: 1rem;
+  color: #000;
+  background-color: #fff;
+  border: 0.15em solid #000;
+  border-radius: 0.2em;
+}
+
