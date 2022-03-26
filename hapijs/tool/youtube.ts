@@ -21,3 +21,5 @@ L.marker([53.480759, -2.242631], {
 })
 .bindPopup('This is Manschester')
 .addTo(map);
+
+const testing = 'hello'
