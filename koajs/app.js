@@ -13,7 +13,8 @@ routes
   .get('/', router.home)
   .get('/worker', router.worker)
   .get('/list', router.list)
-  .get('/poema', router.poema);
+  .get('/poema', router.poema)
+  .get('/youtube', router.youtube);
 
 const app = new Koa();
 app

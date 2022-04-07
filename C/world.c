@@ -1,6 +1,5 @@
 #include <stdio.h>
 
 int main(){
-	printf("hello world, todo bien");
+  printf("Hello World \n Fuck you");
 }
-

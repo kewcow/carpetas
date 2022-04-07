@@ -68,6 +68,13 @@ const page = async () => {
       handler: (req, h) => {
         return h.view('youtube');
       }
+    },
+    {
+      method: 'GET',
+      path: '/canvas',
+      handler: (req, h) => {
+        return h.view('canvas');
+      }
     }
   ]);
 

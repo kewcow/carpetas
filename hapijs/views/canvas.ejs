@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="es" dir="ltr">
+  <head>
+    <%- include ('partials/meta.ejs') %>
+    <link rel="stylesheet" href="style/canvas.css"/>
+    <script src="script/canvas.js" defer></script>
+    <title>Canvas 2D</title>
+  </head>
+  <body>
+    <h1>Drawing 2D</h1>
+    <label for="x">X =</label>
+    <input id="x" type="number" required/>
+    <br/>
+    <label for="y">Y =</label>
+    <input id="y" type="number" required/>
+    <br/>
+    <label for="width">WIDTH =</label>
+    <input id="width" type="number" required/>
+    <br/>
+    <label for="height">HEIGHT =</label>
+    <input id="height" type="number" required/>
+    <br/>
+    <button id="start">Draw</button>
+    <canvas class="draw">
+    </canvas>
+  </body>
+</html>
