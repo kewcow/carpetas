@@ -32,28 +32,15 @@ const degToRad = (degrees) => {
   return degrees * Math.PI / 180;
 };
 
+const image = new Image();
+image.src = '../image/galaxia.jpg';
 
-ctx.strokeStyle = 'rgb(0, 0, 255)';
-ctx.beginPath();
-ctx.moveTo(200, 100);
-ctx.lineTo(300, 100);
-const triHeigh = 100 * Math.tan(degToRad(60));
-ctx.lineTo(250, 50 + triHeigh);
-ctx.lineTo(200, 100);
-ctx.lineWidth = 5
-ctx.stroke();
-
-ctx.strokeStyle = 'rgb(255, 0, 0)';
-ctx.beginPath();
-ctx.moveTo(100, 100);
-ctx.lineTo(200, 100);
-const triHeight = 100 * Math.tan(degToRad(60));
-ctx.lineTo(150, 50 + triHeight);
-ctx.lineTo(100, 100);
-ctx.stroke();
+image.addEventListener('load', () => {
+  ctx.drawImage(image, 0, 0, 500, 500, 0, 0, 500, 500);
+});
 
 const start = document.querySelector('#start');
 start.addEventListener('click', () => {
-  const drawing = new square(x.value, y.value, w.value, h.value);
-  drawing.create();
+  const obj = new square(x.value, y.value, w.value, h.value);
+  obj.create();
 });
