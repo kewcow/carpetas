@@ -33,16 +33,19 @@ const box = () => {
         boxList.appendChild(boxNames);
     }
 };
+
 const addPersons = () => {
     const character = new characters(names.value, 'Deleted');
     persons.push(character);
     box();
 };
+
 enter.addEventListener('click', () => {
     addPersons();
     names.value = '';
     names.focus();
 });
+
 names.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         addPersons();

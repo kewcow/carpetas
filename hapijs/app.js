@@ -75,6 +75,13 @@ const page = async () => {
       handler: (req, h) => {
         return h.view('canvas');
       }
+    },
+    {
+      method: 'GET',
+      path: '/storage',
+      handler: (req, h) => {
+        return h.view('storage');
+      }
     }
   ]);
 
@@ -82,3 +89,4 @@ const page = async () => {
 };
 
 page();
+//Upgrade

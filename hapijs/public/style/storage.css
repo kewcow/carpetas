@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'sans-serif';
+  font-size: 3rem;
+  color: #fff;
+}
+
+aside {
+  background-color: royalblue;
+  width: 94%;
+  font-family: 'sans-serif';
+  font-size: 1.2rem;
+  padding: 1em;
+  border: 0.1em solid lightblue;
+  border-radius: 0.5em;
+  margin-left: 1.2em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+aside article video {
+  width: 100%;
+  border: 0.1em solid whitesmoke;
+  border-radius: 1em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: royalblue;
+  text-align: center;
+  font-family: 'sans-serif';
+  font-size: 1.3rem;
+  color: #fff;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
